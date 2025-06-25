@@ -141,7 +141,8 @@ pnpm dev
 
 The web interface will be available at http://localhost:3000
 
-![Homepage](https://github.com/user-attachments/assets/f890ca58-dfb9-4721-a29f-ac0593584c06)
+![Homepage](https://github.com/user-attachments/assets/0e323a84-3f59-4566-9833-ba5bb9d728e0)
+
 
 ### Command Line Interface
 The application provides several CLI commands for direct interaction:
@@ -153,7 +154,7 @@ The application provides several CLI commands for direct interaction:
 cargo run --release find path/to/audio.wav
 ```
 
-![CLI Identification](https://github.com/user-attachments/assets/a1d5178b-5f85-431f-9c59-e9c9fbceeabc)
+![CLI Identification](https://github.com/user-attachments/assets/5dec784f-f473-436a-a965-6fc7be22a624)
 
 #### Add Songs to Database
 
@@ -185,26 +186,27 @@ cargo run --release erase
 ### Web Interface Usage
 1. Song Identification
   - Navigate to the Scan page
-    ![Scan Inteface](https://github.com/user-attachments/assets/b2c4bfb4-e62a-4988-9702-7ef926011318)
+    ![Scan Inteface](https://github.com/user-attachments/assets/e829e184-493a-4f5d-9b88-7582071fa60f)
     
   - Upload an audio file or record directly in the browser
-    ![Upload Song](https://github.com/user-attachments/assets/413eb045-ce0a-4919-8044-47e091646499)
+    ![Upload Song](https://github.com/user-attachments/assets/9aea7226-ce3f-4911-b8ba-6d023ea78e34)
 
   - View identification results with confidence scores and YouTube links
-    ![Matches-Found](https://github.com/user-attachments/assets/91c8d00e-526b-4a4f-83e0-2ddcaa53beb2)
+    ![Matches-Found](https://github.com/user-attachments/assets/53101312-8138-43e6-b81a-9d2de58b2d42)
 
 
 2. Library Management
   - Access the Library tab to view all stored songs
   - Search and filter through your music collection
   - Play preview clips and access YouTube links
-    ![Library Interface](https://github.com/user-attachments/assets/003a7e8a-9ad1-47ec-bbe7-19f4cdca5730)
+    ![Library Interface](https://github.com/user-attachments/assets/4de03738-c6d1-41f6-8ce7-9f8d0c1ddbf9)
+
 
 3. Contributing Songs
   - Use the Contribute tab to add new songs
   - Upload audio files or provide Spotify URLs
   - System automatically extracts metadata and creates fingerprints
-   ![Contribute Interface](https://github.com/user-attachments/assets/155df6af-09c1-4496-bfae-a4aae3929831)
+    ![Contribute Interface](https://github.com/user-attachments/assets/dfc62c99-5085-4f8c-8ecc-43eed452c3c7)
 
 ### Audio Processing Pipeline
 The system follows this processing pipeline:
@@ -216,9 +218,10 @@ The system follows this processing pipeline:
 5. Fingerprint Creation → Generate hash-based signatures
 6. Database Storage/Matching → Store or compare against existing fingerprints
 
-![image](https://github.com/user-attachments/assets/33603d19-0cb3-457f-b324-207945ab4c84)
+![image](https://github.com/user-attachments/assets/ee45188d-0088-4ed2-b53d-0e2b0defef9b)
 
-![image](https://github.com/user-attachments/assets/10596479-3d04-4793-9f9c-2f84cfe93ac9)
+![image](https://github.com/user-attachments/assets/7db833db-450c-44ba-8b5e-37074842292f)
+
 
 
 ## 📡 API Reference
@@ -358,7 +361,7 @@ async fn identify_song(file_path: &str) -> Result<serde_json::Value, Box<dyn std
 For complete API documentation, visit the web interface at /api-docs or check out the API Documentation page.
 
 ## 🏗️ Project Architecture
-![image](https://github.com/user-attachments/assets/e6f4cfbd-124b-40d7-9fc3-d9767b609e95)
+![image](https://github.com/user-attachments/assets/d0a2aa55-acd4-45a5-8800-d7b2e86fbbfc)
 
 ### Directory Structure
 
@@ -407,8 +410,8 @@ Audio Input → FFmpeg Conversion → Spectrogram Analysis → Peak Detection �
 Fingerprint Generation → Database Storage/Matching → Results Display
 
 <!-- Add data flow diagram -->
-![Swimlane Diagram - Data Flow by Component](https://github.com/user-attachments/assets/e0d9eb79-72da-4836-88ae-b8c1728f1c7d)
-![Sequence Diagram - Data Flow Between Components](https://github.com/user-attachments/assets/0952d1bc-24c9-4002-bd41-cb171f24f934)
+![Swimlane Diagram - Data Flow by Component](https://github.com/user-attachments/assets/473e6719-85a9-446e-b93c-70db259d410b)
+![Sequence Diagram - Data Flow Between Components](https://github.com/user-attachments/assets/41331a33-507b-479b-9fe5-7e59fc5c18c3)
 
 ## 🧪 Development
 
@@ -465,8 +468,8 @@ The SQLite database contains the following main tables:
 - songs - Song metadata (title, artist, YouTube ID)
 - fingerprints - Audio fingerprint hashes and timing data
 - peaks - Spectral peaks for debugging and analysis
-<!-- Add database schema diagram -->
-![Database Schema](https://github.com/user-attachments/assets/60aff281-1c5f-4d0d-b8e5-163868c253b9)
+
+![Database Schema](https://github.com/user-attachments/assets/03de58a3-31ec-4702-aeec-1c0ace50067e)
 
 
 ## 🤝 Contributing
