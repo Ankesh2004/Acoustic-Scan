@@ -7,7 +7,7 @@
 
 A powerful, Rust-based audio fingerprinting and recognition system that can identify songs, build music libraries, and provide real-time audio analysis capabilities. Built with modern web technologies and a robust Rust backend.
 
-![Acousti-Scan Banner](https://github.com/user-attachments/assets/955192d8-fddf-44e2-9a50-05e83a947347)
+![Acousti-Scan Banner](https://github.com/user-attachments/assets/4c630c16-eaf1-4b8a-91a8-5db02463c5af)
 
 
 ## 🎵 Overview
