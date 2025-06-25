@@ -1,0 +1,148 @@
+export interface Song {
+  id: string
+  name: string
+  artist: string
+  youtubeId: string
+  thumbnailUrl: string
+  dateAdded: string
+  scanCount?: number // Number of times the song has been scanned
+}
+
+export const mockLibrary: Song[] = [
+  {
+    id: "song_1",
+    name: "Bohemian Rhapsody",
+    artist: "Queen",
+    youtubeId: "fJ9rUzIMcZQ",
+    thumbnailUrl: "https://i.ytimg.com/vi/fJ9rUzIMcZQ/hqdefault.jpg",
+    dateAdded: "2023-05-15",
+    scanCount: 1254,
+  },
+  {
+    id: "song_2",
+    name: "Stairway to Heaven",
+    artist: "Led Zeppelin",
+    youtubeId: "QkF3oxziUI4",
+    thumbnailUrl: "https://i.ytimg.com/vi/QkF3oxziUI4/hqdefault.jpg",
+    dateAdded: "2023-06-22",
+    scanCount: 987,
+  },
+  {
+    id: "song_3",
+    name: "Hotel California",
+    artist: "Eagles",
+    youtubeId: "BciS5krYL80",
+    thumbnailUrl: "https://i.ytimg.com/vi/BciS5krYL80/hqdefault.jpg",
+    dateAdded: "2023-07-10",
+    scanCount: 876,
+  },
+  {
+    id: "song_4",
+    name: "Sweet Child O' Mine",
+    artist: "Guns N' Roses",
+    youtubeId: "1w7OgIMMRc4",
+    thumbnailUrl: "https://i.ytimg.com/vi/1w7OgIMMRc4/hqdefault.jpg",
+    dateAdded: "2023-08-05",
+    scanCount: 765,
+  },
+  {
+    id: "song_5",
+    name: "Imagine",
+    artist: "John Lennon",
+    youtubeId: "YkgkThdzX-8",
+    thumbnailUrl: "https://i.ytimg.com/vi/YkgkThdzX-8/hqdefault.jpg",
+    dateAdded: "2023-09-12",
+    scanCount: 654,
+  },
+  {
+    id: "song_6",
+    name: "Smells Like Teen Spirit",
+    artist: "Nirvana",
+    youtubeId: "hTWKbfoikeg",
+    thumbnailUrl: "https://i.ytimg.com/vi/hTWKbfoikeg/hqdefault.jpg",
+    dateAdded: "2023-10-18",
+    scanCount: 543,
+  },
+  {
+    id: "song_7",
+    name: "Billie Jean",
+    artist: "Michael Jackson",
+    youtubeId: "Zi_XfYTNUAw",
+    thumbnailUrl: "https://i.ytimg.com/vi/Zi_XfYTNUAw/hqdefault.jpg",
+    dateAdded: "2023-11-25",
+    scanCount: 432,
+  },
+  {
+    id: "song_8",
+    name: "Like a Rolling Stone",
+    artist: "Bob Dylan",
+    youtubeId: "IwOfCgkyEj0",
+    thumbnailUrl: "https://i.ytimg.com/vi/IwOfCgkyEj0/hqdefault.jpg",
+    dateAdded: "2023-12-30",
+    scanCount: 321,
+  },
+  {
+    id: "song_9",
+    name: "Purple Haze",
+    artist: "Jimi Hendrix",
+    youtubeId: "WGoDaYjdfSg",
+    thumbnailUrl: "https://i.ytimg.com/vi/WGoDaYjdfSg/hqdefault.jpg",
+    dateAdded: "2024-01-15",
+    scanCount: 210,
+  },
+  {
+    id: "song_10",
+    name: "Johnny B. Goode",
+    artist: "Chuck Berry",
+    youtubeId: "ZFo8-JqzSCM",
+    thumbnailUrl: "https://i.ytimg.com/vi/ZFo8-JqzSCM/hqdefault.jpg",
+    dateAdded: "2024-02-20",
+    scanCount: 198,
+  },
+  {
+    id: "song_11",
+    name: "Wonderwall",
+    artist: "Oasis",
+    youtubeId: "bx1Bh8ZvH84",
+    thumbnailUrl: "https://i.ytimg.com/vi/bx1Bh8ZvH84/hqdefault.jpg",
+    dateAdded: "2024-03-05",
+    scanCount: 187,
+  },
+  {
+    id: "song_12",
+    name: "Thriller",
+    artist: "Michael Jackson",
+    youtubeId: "sOnqjkJTMaA",
+    thumbnailUrl: "https://i.ytimg.com/vi/sOnqjkJTMaA/hqdefault.jpg",
+    dateAdded: "2024-03-10",
+    scanCount: 176,
+  },
+  {
+    id: "song_13",
+    name: "Yesterday",
+    artist: "The Beatles",
+    youtubeId: "NrgmdOz227I",
+    thumbnailUrl: "https://i.ytimg.com/vi/NrgmdOz227I/hqdefault.jpg",
+    dateAdded: "2024-03-15",
+    scanCount: 165,
+  },
+  {
+    id: "song_14",
+    name: "Hallelujah",
+    artist: "Leonard Cohen",
+    youtubeId: "YrLk4vdY28Q",
+    thumbnailUrl: "https://i.ytimg.com/vi/YrLk4vdY28Q/hqdefault.jpg",
+    dateAdded: "2024-03-20",
+    scanCount: 154,
+  },
+  {
+    id: "song_15",
+    name: "Lose Yourself",
+    artist: "Eminem",
+    youtubeId: "_Yhyp-_hX2s",
+    thumbnailUrl: "https://i.ytimg.com/vi/_Yhyp-_hX2s/hqdefault.jpg",
+    dateAdded: "2024-03-25",
+    scanCount: 143,
+  },
+]
+
