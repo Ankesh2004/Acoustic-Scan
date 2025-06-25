@@ -7,8 +7,8 @@
 
 A powerful, Rust-based audio fingerprinting and recognition system that can identify songs, build music libraries, and provide real-time audio analysis capabilities. Built with modern web technologies and a robust Rust backend.
 
-<!-- Add project logo/banner here -->
-![Acousti-Scan Logo](screenshots/banner.png)
+![Acousti-Scan Banner](https://github.com/user-attachments/assets/955192d8-fddf-44e2-9a50-05e83a947347)
+
 
 ## 🎵 Overview
 
@@ -141,8 +141,7 @@ pnpm dev
 
 The web interface will be available at http://localhost:3000
 
-<!-- Add screenshot of the main homepage -->
-![Homepage](screenshots/homepage.png)
+![Homepage](https://github.com/user-attachments/assets/f890ca58-dfb9-4721-a29f-ac0593584c06)
 
 ### Command Line Interface
 The application provides several CLI commands for direct interaction:
@@ -154,8 +153,7 @@ The application provides several CLI commands for direct interaction:
 cargo run --release find path/to/audio.wav
 ```
 
-<!-- Add screenshot of CLI identification results -->
-![CLI Identification](screenshots/cli_identification.png)
+![CLI Identification](https://github.com/user-attachments/assets/a1d5178b-5f85-431f-9c59-e9c9fbceeabc)
 
 #### Add Songs to Database
 
@@ -187,24 +185,26 @@ cargo run --release erase
 ### Web Interface Usage
 1. Song Identification
   - Navigate to the Scan page
+    ![Scan Inteface](https://github.com/user-attachments/assets/b2c4bfb4-e62a-4988-9702-7ef926011318)
+    
   - Upload an audio file or record directly in the browser
+    ![Upload Song](https://github.com/user-attachments/assets/413eb045-ce0a-4919-8044-47e091646499)
+
   - View identification results with confidence scores and YouTube links
-  <!-- Add screenshot of the scan page -->
-  ![Scan Interface](screenshots/scan_interface.png)
+    ![Matches-Found](https://github.com/user-attachments/assets/91c8d00e-526b-4a4f-83e0-2ddcaa53beb2)
+
 
 2. Library Management
   - Access the Library tab to view all stored songs
   - Search and filter through your music collection
   - Play preview clips and access YouTube links
-  <!-- Add screenshot of the library page -->
-  ![Library Interface](screenshots/library_interface.png)
+    ![Library Interface](https://github.com/user-attachments/assets/003a7e8a-9ad1-47ec-bbe7-19f4cdca5730)
 
 3. Contributing Songs
   - Use the Contribute tab to add new songs
   - Upload audio files or provide Spotify URLs
   - System automatically extracts metadata and creates fingerprints
-  <!-- Add screenshot of the contribute page -->
-  ![Contribute Interface](screenshots/contribute_interface.png)
+   ![Contribute Interface](https://github.com/user-attachments/assets/155df6af-09c1-4496-bfae-a4aae3929831)
 
 ### Audio Processing Pipeline
 The system follows this processing pipeline:
@@ -215,8 +215,11 @@ The system follows this processing pipeline:
 4. Peak Detection → Identify prominent frequency peaks
 5. Fingerprint Creation → Generate hash-based signatures
 6. Database Storage/Matching → Store or compare against existing fingerprints
-<!-- Add architecture diagram -->
-![Processing Pipeline](screenshots/processing_pipeline.png)
+
+![image](https://github.com/user-attachments/assets/33603d19-0cb3-457f-b324-207945ab4c84)
+
+![image](https://github.com/user-attachments/assets/10596479-3d04-4793-9f9c-2f84cfe93ac9)
+
 
 ## 📡 API Reference
 The system provides a comprehensive REST API for programmatic access:
@@ -355,6 +358,7 @@ async fn identify_song(file_path: &str) -> Result<serde_json::Value, Box<dyn std
 For complete API documentation, visit the web interface at /api-docs or check out the API Documentation page.
 
 ## 🏗️ Project Architecture
+![image](https://github.com/user-attachments/assets/e6f4cfbd-124b-40d7-9fc3-d9767b609e95)
 
 ### Directory Structure
 
@@ -403,7 +407,8 @@ Audio Input → FFmpeg Conversion → Spectrogram Analysis → Peak Detection �
 Fingerprint Generation → Database Storage/Matching → Results Display
 
 <!-- Add data flow diagram -->
-![Data Flow Diagram](screenshots/data_flow.png)
+![Swimlane Diagram - Data Flow by Component](https://github.com/user-attachments/assets/e0d9eb79-72da-4836-88ae-b8c1728f1c7d)
+![Sequence Diagram - Data Flow Between Components](https://github.com/user-attachments/assets/0952d1bc-24c9-4002-bd41-cb171f24f934)
 
 ## 🧪 Development
 
@@ -461,7 +466,8 @@ The SQLite database contains the following main tables:
 - fingerprints - Audio fingerprint hashes and timing data
 - peaks - Spectral peaks for debugging and analysis
 <!-- Add database schema diagram -->
-![Database Schema](screenshots/database_schema.png)
+![Database Schema](https://github.com/user-attachments/assets/60aff281-1c5f-4d0d-b8e5-163868c253b9)
+
 
 ## 🤝 Contributing
 We welcome contributions! Please follow these steps:
@@ -521,7 +527,6 @@ copies or substantial portions of the Software.
 ## 🎯 Roadmap
 
 ### Upcoming Features
-- [ ] Machine Learning Integration - Improve identification accuracy
 - [ ] Multi-language Support - Internationalization
 - [ ] Cloud Deployment - Docker containers and cloud setup
 - [ ] Advanced Analytics - Detailed usage statistics and insights
@@ -529,6 +534,7 @@ copies or substantial portions of the Software.
 - [ ] Social Features - Share discoveries and collaborate
 
 ### Long-term Goals
+- [ ] Machine Learning Integration - Improve identification accuracy
 - [ ] Mobile Apps - Native iOS and Android applications
 - [ ] Plugin System - Extensible architecture for custom analyzers
 - [ ] Real-time Streaming - Live radio and streaming service integration
@@ -554,5 +560,5 @@ copies or substantial portions of the Software.
 <div align="center">
 Made with ❤️ and 🦀 Rust
 
-⭐ Star this repo | 🐛 Report Bug | 💡 Request Feature
+[⭐ Star this repo](https://github.com/your-username/your-repo-name/stargazers) • [🐛 Report Bug](https://github.com/your-username/your-repo-name/issues/new?template=bug_report.md) • [💡 Request Feature](https://github.com/your-username/your-repo-name/issues/new?template=feature_request.md)
 </div>
