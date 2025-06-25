@@ -543,8 +543,8 @@ copies or substantial portions of the Software.
 ## 📞 Contact & Support
 
 ### Project Maintainers
-- Primary Maintainer: Your Name
-- GitHub: @yourusername
+- Primary Maintainer: Ankesh Gupta
+- GitHub: @Ankesh2004
 
 ### Community
 - 🐛 Bug Reports: GitHub Issues
@@ -560,5 +560,5 @@ copies or substantial portions of the Software.
 <div align="center">
 Made with ❤️ and 🦀 Rust
 
-[⭐ Star this repo](https://github.com/your-username/your-repo-name/stargazers) • [🐛 Report Bug](https://github.com/your-username/your-repo-name/issues/new?template=bug_report.md) • [💡 Request Feature](https://github.com/your-username/your-repo-name/issues/new?template=feature_request.md)
+[⭐ Star this repo](https://github.com/Ankesh2004/Acoustic-Scan) • [🐛 Report Bug](https://github.com/your-username/your-repo-name/issues/new?template=bug_report.md) • [💡 Request Feature](https://github.com/your-username/your-repo-name/issues/new?template=feature_request.md)
 </div>
