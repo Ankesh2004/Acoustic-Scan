@@ -1,8 +1,21 @@
-import { Navbar } from "@/components/navbar"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Code, FileJson, Fingerprint, AudioWaveformIcon as Waveform, Library, Download } from "lucide-react"
-import { CopyButton } from "@/components/copy-button"
+import { Navbar } from "@/components/navbar";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Code,
+  FileJson,
+  Fingerprint,
+  AudioWaveformIcon as Waveform,
+  Library,
+  Download,
+} from "lucide-react";
+import { CopyButton } from "@/components/copy-button";
 
 export default function ApiDocsPage() {
   return (
@@ -11,8 +24,12 @@ export default function ApiDocsPage() {
       <main className="flex-1 container py-8 md:py-12">
         <div className="mx-auto max-w-5xl space-y-8">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tight">API Documentation</h1>
-            <p className="text-muted-foreground">Learn how to integrate with the Acousti-Scan API</p>
+            <h1 className="text-3xl font-bold tracking-tight">
+              API Documentation
+            </h1>
+            <p className="text-muted-foreground">
+              Learn how to integrate with the Acousti-Scan API
+            </p>
           </div>
 
           <Tabs defaultValue="overview" className="space-y-8">
@@ -24,11 +41,16 @@ export default function ApiDocsPage() {
               <TabsTrigger value="examples">Examples</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="overview" className="space-y-6 animate-slide-up">
+            <TabsContent
+              value="overview"
+              className="space-y-6 animate-slide-up"
+            >
               <Card>
                 <CardHeader>
                   <CardTitle>Getting Started</CardTitle>
-                  <CardDescription>Learn the basics of the Acousti-Scan API</CardDescription>
+                  <CardDescription>
+                    Learn the basics of the Acousti-Scan API
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex">
@@ -41,14 +63,15 @@ export default function ApiDocsPage() {
                     <div className="space-y-2 pb-8">
                       <h3 className="text-lg font-medium">Base URL</h3>
                       <p className="text-muted-foreground">
-                        All API requests should be made to the following base URL:
+                        All API requests should be made to the following base
+                        URL:
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
-                          value="http://localhost:8080"
+                          value="https://acoustic-scan.onrender.com"
                           className="absolute right-2 top-2 opacity-0 group-hover:opacity-100 transition-opacity"
                         />
-                        <code className="text-sm">{`http://localhost:8080`}</code>
+                        <code className="text-sm">{`https://acoustic-scan.onrender.com`}</code>
                       </div>
                     </div>
                   </div>
@@ -63,7 +86,8 @@ export default function ApiDocsPage() {
                     <div className="space-y-2 pb-8">
                       <h3 className="text-lg font-medium">Content Types</h3>
                       <p className="text-muted-foreground">
-                        The API accepts multipart/form-data for file uploads and returns JSON responses.
+                        The API accepts multipart/form-data for file uploads and
+                        returns JSON responses.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -84,9 +108,12 @@ Response: application/json`}</code>
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <h3 className="text-lg font-medium">Supported Audio Formats</h3>
+                      <h3 className="text-lg font-medium">
+                        Supported Audio Formats
+                      </h3>
                       <p className="text-muted-foreground">
-                        The API supports common audio formats including MP3, WAV, FLAC, and other formats supported by FFmpeg.
+                        The API supports common audio formats including MP3,
+                        WAV, FLAC, and other formats supported by FFmpeg.
                       </p>
                     </div>
                   </div>
@@ -94,11 +121,16 @@ Response: application/json`}</code>
               </Card>
             </TabsContent>
 
-            <TabsContent value="identify" className="space-y-6 animate-slide-up">
+            <TabsContent
+              value="identify"
+              className="space-y-6 animate-slide-up"
+            >
               <Card>
                 <CardHeader>
                   <CardTitle>Song Identification API</CardTitle>
-                  <CardDescription>Identify songs using audio fingerprinting technology</CardDescription>
+                  <CardDescription>
+                    Identify songs using audio fingerprinting technology
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex">
@@ -111,7 +143,8 @@ Response: application/json`}</code>
                     <div className="space-y-2 pb-8">
                       <h3 className="text-lg font-medium">Endpoint</h3>
                       <p className="text-muted-foreground">
-                        Send a POST request with an audio file to identify a song using acoustic fingerprinting.
+                        Send a POST request with an audio file to identify a
+                        song using acoustic fingerprinting.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -133,7 +166,8 @@ Response: application/json`}</code>
                     <div className="space-y-2 pb-8">
                       <h3 className="text-lg font-medium">Request Format</h3>
                       <p className="text-muted-foreground">
-                        Upload an audio file using multipart/form-data. The system will analyze the audio and return matching songs.
+                        Upload an audio file using multipart/form-data. The
+                        system will analyze the audio and return matching songs.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -160,7 +194,8 @@ file: [audio file binary data]`}
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Response Format</h3>
                       <p className="text-muted-foreground">
-                        Returns an array of matching songs with confidence scores, timestamps, and YouTube links.
+                        Returns an array of matching songs with confidence
+                        scores, timestamps, and YouTube links.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -197,11 +232,16 @@ file: [audio file binary data]`}
               </Card>
             </TabsContent>
 
-            <TabsContent value="contribute" className="space-y-6 animate-slide-up">
+            <TabsContent
+              value="contribute"
+              className="space-y-6 animate-slide-up"
+            >
               <Card>
                 <CardHeader>
                   <CardTitle>Song Contribution API</CardTitle>
-                  <CardDescription>Add new songs to the Acousti-Scan database</CardDescription>
+                  <CardDescription>
+                    Add new songs to the Acousti-Scan database
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex">
@@ -214,7 +254,8 @@ file: [audio file binary data]`}
                     <div className="space-y-2 pb-8">
                       <h3 className="text-lg font-medium">Download Endpoint</h3>
                       <p className="text-muted-foreground">
-                        Download and add a song to the database using a Spotify URL.
+                        Download and add a song to the database using a Spotify
+                        URL.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -234,9 +275,12 @@ file: [audio file binary data]`}
                       <div className="mt-2 h-full w-px bg-border" />
                     </div>
                     <div className="space-y-2 pb-8">
-                      <h3 className="text-lg font-medium">Download Request Format</h3>
+                      <h3 className="text-lg font-medium">
+                        Download Request Format
+                      </h3>
                       <p className="text-muted-foreground">
-                        Send a JSON request with a Spotify track URL to download and add the song.
+                        Send a JSON request with a Spotify track URL to download
+                        and add the song.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -268,7 +312,8 @@ file: [audio file binary data]`}
                     <div className="space-y-2 pb-8">
                       <h3 className="text-lg font-medium">Upload Endpoint</h3>
                       <p className="text-muted-foreground">
-                        Upload an audio file with metadata to add it directly to the database.
+                        Upload an audio file with metadata to add it directly to
+                        the database.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -287,9 +332,12 @@ file: [audio file binary data]`}
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <h3 className="text-lg font-medium">Upload Request Format</h3>
+                      <h3 className="text-lg font-medium">
+                        Upload Request Format
+                      </h3>
                       <p className="text-muted-foreground">
-                        Upload an audio file along with song metadata using multipart/form-data.
+                        Upload an audio file along with song metadata using
+                        multipart/form-data.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -320,7 +368,9 @@ youtube_id: "dQw4w9WgXcQ"`}
               <Card>
                 <CardHeader>
                   <CardTitle>Library API</CardTitle>
-                  <CardDescription>Access and manage the song library</CardDescription>
+                  <CardDescription>
+                    Access and manage the song library
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex">
@@ -354,7 +404,8 @@ youtube_id: "dQw4w9WgXcQ"`}
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Response Format</h3>
                       <p className="text-muted-foreground">
-                        Returns an array of all songs in the library with their metadata and thumbnails.
+                        Returns an array of all songs in the library with their
+                        metadata and thumbnails.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -403,11 +454,17 @@ youtube_id: "dQw4w9WgXcQ"`}
               </Card>
             </TabsContent>
 
-            <TabsContent value="examples" className="space-y-6 animate-slide-up">
+            <TabsContent
+              value="examples"
+              className="space-y-6 animate-slide-up"
+            >
               <Card>
                 <CardHeader>
                   <CardTitle>Code Examples</CardTitle>
-                  <CardDescription>Examples of how to use the Acousti-Scan API in different languages</CardDescription>
+                  <CardDescription>
+                    Examples of how to use the Acousti-Scan API in different
+                    languages
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex">
@@ -418,9 +475,12 @@ youtube_id: "dQw4w9WgXcQ"`}
                       <div className="mt-2 h-full w-px bg-border" />
                     </div>
                     <div className="space-y-2 pb-8">
-                      <h3 className="text-lg font-medium">JavaScript/TypeScript</h3>
+                      <h3 className="text-lg font-medium">
+                        JavaScript/TypeScript
+                      </h3>
                       <p className="text-muted-foreground">
-                        Example of how to identify a song using the browser's fetch API.
+                        Example of how to identify a song using the browser's
+                        fetch API.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -605,7 +665,8 @@ result = download_from_spotify('https://open.spotify.com/track/...')`}
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Rust</h3>
                       <p className="text-muted-foreground">
-                        Example using Rust with reqwest and tokio for async operations.
+                        Example using Rust with reqwest and tokio for async
+                        operations.
                       </p>
                       <div className="mt-2 rounded-md bg-muted p-4 overflow-x-auto relative group">
                         <CopyButton
@@ -719,6 +780,5 @@ async fn main() -> Result<(), Box<dyn Error>> {
         </div>
       </main>
     </div>
-  )
+  );
 }
-
