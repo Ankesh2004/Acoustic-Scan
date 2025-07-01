@@ -200,7 +200,8 @@ pub async fn start_server(host: &str, port: u16) -> std::io::Result<()> {
         let cors = Cors::default()
             .allowed_origin("http://localhost:3000") // Next.js dev server
             .allowed_origin("http://127.0.0.1:3000")
-            .allowed_origin("https://your-frontend-app-name.vercel.app") // Production frontend
+            .allowed_origin("https://acoustic-scan.vercel.app/") // Replace with your Vercel URL
+            .allow_any_origin() // Allow any origin for now (you can restrict this later)
             .allowed_methods(vec!["GET", "POST", "PUT", "DELETE"])
             .allowed_headers(vec!["Content-Type", "Authorization"])
             .max_age(3600);

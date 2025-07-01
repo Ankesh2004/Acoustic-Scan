@@ -489,7 +489,7 @@ async function identifySong(audioFile: File) {
   const formData = new FormData();
   formData.append('file', audioFile);
 
-  const response = await fetch('http://localhost:8080/api/find', {
+  const response = await fetch('https://acoustic-scan.onrender.com/api/find', {
     method: 'POST',
     body: formData
   });
@@ -504,14 +504,14 @@ async function identifySong(audioFile: File) {
 
 // Get library
 async function getLibrary() {
-  const response = await fetch('http://localhost:8080/api/library');
+  const response = await fetch('https://acoustic-scan.onrender.com/api/library');
   const library = await response.json();
   return library;
 }
 
 // Download from Spotify
 async function downloadFromSpotify(spotifyUrl: string) {
-  const response = await fetch('http://localhost:8080/api/download', {
+  const response = await fetch('https://acoustic-scan.onrender.com/api/download', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -529,7 +529,7 @@ async function identifySong(audioFile: File) {
   const formData = new FormData();
   formData.append('file', audioFile);
 
-  const response = await fetch('http://localhost:8080/api/find', {
+  const response = await fetch('https://acoustic-scan.onrender.com/api/find', {
     method: 'POST',
     body: formData
   });
@@ -544,14 +544,14 @@ async function identifySong(audioFile: File) {
 
 // Get library
 async function getLibrary() {
-  const response = await fetch('http://localhost:8080/api/library');
+  const response = await fetch('https://acoustic-scan.onrender.com/api/library');
   const library = await response.json();
   return library;
 }
 
 // Download from Spotify
 async function downloadFromSpotify(spotifyUrl: string) {
-  const response = await fetch('http://localhost:8080/api/download', {
+  const response = await fetch('https://acoustic-scan.onrender.com/api/download', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -585,7 +585,7 @@ import json
 
 # Identify a song
 def identify_song(file_path):
-    url = 'http://localhost:8080/api/find'
+    url = 'https://acoustic-scan.onrender.com/api/find'
     
     with open(file_path, 'rb') as f:
         files = {'file': f}
@@ -596,14 +596,14 @@ def identify_song(file_path):
 
 # Get library
 def get_library():
-    url = 'http://localhost:8080/api/library'
+    url = 'https://acoustic-scan.onrender.com/api/library'
     response = requests.get(url)
     response.raise_for_status()
     return response.json()
 
 # Download from Spotify
 def download_from_spotify(spotify_url):
-    url = 'http://localhost:8080/api/download'
+    url = 'https://acoustic-scan.onrender.com/api/download'
     data = {'spotify_url': spotify_url}
     
     response = requests.post(url, json=data)
@@ -622,7 +622,7 @@ import json
 
 # Identify a song
 def identify_song(file_path):
-    url = 'http://localhost:8080/api/find'
+    url = 'https://acoustic-scan.onrender.com/api/find'
     
     with open(file_path, 'rb') as f:
         files = {'file': f}
@@ -633,14 +633,14 @@ def identify_song(file_path):
 
 # Get library
 def get_library():
-    url = 'http://localhost:8080/api/library'
+    url = 'https://acoustic-scan.onrender.com/api/library'
     response = requests.get(url)
     response.raise_for_status()
     return response.json()
 
 # Download from Spotify
 def download_from_spotify(spotify_url):
-    url = 'http://localhost:8080/api/download'
+    url = 'https://acoustic-scan.onrender.com/api/download'
     data = {'spotify_url': spotify_url}
     
     response = requests.post(url, json=data)
@@ -687,7 +687,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     
     let client = reqwest::Client::new();
     let response = client
-        .post("http://localhost:8080/api/find")
+        .post("https://acoustic-scan.onrender.com/api/find")
         .multipart(form)
         .send()
         .await?;
@@ -697,7 +697,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     
     // Get library
     let library_response = client
-        .get("http://localhost:8080/api/library")
+        .get("https://acoustic-scan.onrender.com/api/library")
         .send()
         .await?;
     
@@ -706,7 +706,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     
     // Download from Spotify
     let download_response = client
-        .post("http://localhost:8080/api/download")
+        .post("https://acoustic-scan.onrender.com/api/download")
         .json(&json!({
             "spotify_url": "https://open.spotify.com/track/..."
         }))
@@ -738,7 +738,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     
     let client = reqwest::Client::new();
     let response = client
-        .post("http://localhost:8080/api/find")
+        .post("https://acoustic-scan.onrender.com/api/find")
         .multipart(form)
         .send()
         .await?;
@@ -748,7 +748,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     
     // Get library
     let library_response = client
-        .get("http://localhost:8080/api/library")
+        .get("https://acoustic-scan.onrender.com/api/library")
         .send()
         .await?;
     
@@ -757,7 +757,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     
     // Download from Spotify
     let download_response = client
-        .post("http://localhost:8080/api/download")
+        .post("https://acoustic-scan.onrender.com/api/download")
         .json(&json!({
             "spotify_url": "https://open.spotify.com/track/..."
         }))
