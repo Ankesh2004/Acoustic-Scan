@@ -45,8 +45,8 @@ The project implements Shazam-like functionality using advanced signal processin
 - **🌐 REST API**: Complete HTTP API for integration with external applications
 - **💾 SQLite Database**: Lightweight, embedded database for fingerprint storage
 - **🎨 Modern UI**: React-based web interface with responsive design
-- **📱 Mobile Support**: Touch-friendly interface optimized for mobile devices
-- **🔄 Real-time Processing**: WebSocket support for live audio streaming
+- **📱 Mobile Support**: Touch-friendly interface optimized for mobile devices (Upcoming)
+- **🔄 Real-time Processing**: WebSocket support for live audio  (Upcoming)
 
 ### Audio Processing
 - **FFT Analysis**: Fast Fourier Transform for frequency domain analysis
